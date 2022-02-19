@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useInterval } from '../hooks/use-interval';
-import { secondsTime } from '../utils/seconds-to-time';
+import { secondsToTime } from '../utils/seconds-to-time';
 import { Button } from './button';
 import { Timer } from './timer';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -106,7 +106,7 @@ export function PomodoroTimer(props: Props): JSX.Element {
 
       <div className="details">
         <p>Ciclos concluidos: {completedCycles}</p>
-        <p>Horas Trabalhadas: {secondsTime(fullWorkingTimer)}</p>
+        <p>Horas Trabalhadas: {secondsToTime(fullWorkingTimer)}</p>
         <p>Numero Pomodoros Concluidos: {numberOfPomodoros}</p>
       </div>
     </div>
