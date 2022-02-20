@@ -53,11 +53,11 @@ body {
   background: #41b4e2;
   border: none;
   cursor: pointer;
-  padding: 30px 25px;
+  padding: 10px 35px;
   color: #000;
   transition: background-color 500ms ease-in-out;
   margin: 20px auto;
-  border-radius: 100px;
+  border-radius: 10px;
 }
 
 .working .pomodoro button {
